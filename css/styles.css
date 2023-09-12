@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    background-image:url("../images/pastel-yellow-vignette-concrete-textured-background.jpg");
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+nav {
+    background-color: #482E1D;
+    border-style: solid;
+    border-width: 0 0 5px 0;
+    border-color: #382417;
+    display: flex;
+    justify-content: right;
+}
+.nav-link a {
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    color: #faebcd;
+}
+.nav-link:hover a {
+    border-radius: 100px;
+    color: #ffffff;
+    background-color: #61432f;
+}
+.banner {
+    margin-top: 0;
+    background-image:url("../images/tree.jpg"); 
+    background-size: cover;
+    background-position-y: 75%;
+    background-color: black;
+    height: 250px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 4px black;
+    color: white;
+    padding-top: 75px;
+    border-style: solid;
+    border-width: 0 0 5px 0;
+    border-color: #382417;
+}
+.banner h1 {
+    position: relative;
+    font-family: Garamond, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    bottom: 15px;
+}
+.banner h2 {
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    bottom: 15px;
+}
+.img1 {
+    position: absolute;
+    top: 125px;
+    left: 150px;
+}
+.img2 {
+    position: absolute;
+    top: 125px;
+    right: 150px;
+}
+#headshot {
+    margin: 125px 0 25px 0;
+    border-radius: 50%;
+}
+h2 {
+    margin: 0 0 25px 0;
+}
+.page p {
+    margin: auto;
+    width: 600px;
+}
+hr {
+    margin: auto;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    width: 75%;
+    border: 2px solid #482E1D;
+}
+.three-col {
+    margin: 50px 0 125px 0;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+    margin: auto;
+    width: 325px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    border-color: #00000080;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.card img {
+    border-radius: 10px 10px 0 0;
+}
+.card h3 {
+    margin: 25px 0 25px 0;
+}
+.card ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card li {
+    padding: 0 0 10px 0;
+}
+.card dl {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card dd {
+    margin: 0;
+    padding-bottom: 25px;
+}
+.card a {
+    color: #90553C;
+    padding: 5px 15px 5px 15px;
+    text-decoration: none;
+}
+dd:hover a {
+    color: #e06a37;;
+}
+body::after {
+    content: '';
+    display: block;
+    height: 56px;
+}
+#contact {
+    margin-top: 200px;
+}
+#card-form {
+    background-color: #482E1D;
+    width: 600px;
+    height: 400px;
+}
+form {
+    height: 100%;
+    text-align: left;
+    padding-left: 50px;
+}
+label {
+    color: #faebcd;
+    padding-top: 65px;
+    display: inline-block;
+    clear: left;
+    width: 75px;
+    text-align: right;
+}
+#name, #email, #message {
+    height: 25px;
+    width: 342px;
+}
+#submit {
+    margin: 45px 0 0 422px;
+    padding: 15px 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    background-color: #faebcd;
+    border-radius: 10px;
+}
+#submit:hover {
+    margin: 42px 0 0 420px;
+    padding: 16px 32px;
+}
+footer {
+    position: absolute;
+    height: 56px;
+    width: 100%;
+    bottom: 0;
+    background-color: #482E1D;
+    border-style: solid;
+    border-width: 5px 0 0 0;
+    border-color: #382417;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-link a {
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    color: #faebcd;
+}
+.footer-link:hover a {
+    border-radius: 100px;
+    color: #ffffff;
+    background-color: #61432f;
+}
+@media all and (max-width: 1050px) {
+    .img1 {
+        left: 5px;
+    }
+    .img2 {
+        right: 5px;
+    }
+    .three-col {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+@media all and (max-width: 700px) {
+    .img1 img {
+        width: 150px;
+        top: 50px;
+    }
+    .img2 img {
+        width: 150px;
+        top: 50px;
+    }
+    .page p {
+        width: 75%;
+    }
+    .three-col {
+      grid-template-columns: 1fr;
+    }
+}
